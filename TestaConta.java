@@ -2,7 +2,6 @@ import java.util.*;
 public class TestaConta {
 public static void main(String[] args) {
 Conta conta = new Conta ("Letícia França", 24062602, 2406, 6987.54, "24/06/2016");
-double saldo = 6789.54;
 Scanner sc = new Scanner (System.in);
 System.out.println ("Qual operação deseja realizar?: \n 1 - Sacar. \n 2 - Depositar.  \n 3 - Consultar rendimento.");
 int opcao = sc.nextInt ();
@@ -25,6 +24,10 @@ System.out.println ("A quantos meses você tem uma poupança?");
 int mes = sc.nextInt();
 System.out.println ("No próximo mês, o seu saldo, com rendimento da conta, será:");
 conta.rendimento (mes);
+break;
+   
+default:
+System.out.println ("Opção inválida.");
 }
 }
 }
